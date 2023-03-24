@@ -6,62 +6,101 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Battle Buddies</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="input.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap" rel="stylesheet" />
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 </head>
 
-<body>
 
-    <div class="flex">
+    
 
-        <div
-            class="max-w-sm overflow-hidden rounded-xl bg-white shadow-md duration-200 hover:scale-105 hover:shadow-xl">
-            <img src="chess logo.png" alt="plant" class="h-auto w-full" />
-            <div class="p-5">
-                <button
-                    class="w-full rounded-md bg-indigo-600  py-2 text-indigo-100 hover:bg-indigo-500 hover:shadow-md duration-75">Challenge</button>
-            </div>
-        </div>
 
-            <div
-                class="max-w-sm overflow-hidden rounded-xl bg-white shadow-md duration-200 hover:scale-105 hover:shadow-xl">
-                <img src="ludo logo.png" alt="plant" class="h-auto w-full" />
-                <div class="p-5">
-                    <p class="text-medium mb-5 text-gray-700">
-                        <button
-                            class="w-full rounded-md bg-indigo-600  py-2 text-indigo-100 hover:bg-indigo-500 hover:shadow-md duration-75">Challenge
+<body class="background-animate w-full h-screen bg-gradient-to-r from-black via-orange-500 to-yellow-600 ">
+    <div class="w-8 bg-red-600">
+        <nav class="fixed top-0 right-0 left-0 ">
+            <div class="flex justify-between bg-gray-400 h-12 pl-8  ">
+                <div class="flex items-center  ">
+                    <a href="index.html">
+                        <img src="logo.jpg" alt="" class="h-[2rem] ml-4 rounded-lg">
+
+    
+
+                    </a>
+                    <ul class="flex hidden lg:flex">
+                        <li class="text-white ml-10">
+                            <a href="">Home </a>
+    
+                        </li>
+    
+                        <li class="text-white ml-10">
+                            <a href="">Dashboard
+                            </a>
+                        </li>
+                        <li class="text-white ml-10">
+                            <a href="">Store </a>
+                        </li>
+    
+                        <li class="text-white ml-10">
+                            <a href="">Support
+                            </a>
+                        </li>
+    
+                       
+                        <li class="text-white ml-10  "> <a href=""> About </a> </li>
+                    </ul>
+    
+                </div>
+    
+    
+                <div class="flex justify-center items-center p-4">
+                    <ul class="flex hidden lg:flex">
+                        
+                        
+                        <li class="ml-10">
+                            <input type="text" class="rounded px-4 mr-2 mt-1" placeholder="Search Games">
+                        </li>
+                        <button id="btn" class="hover:scale-110">
+
+                            <img src="searchlg.jpg" alt="" class="h-[1.5rem] mr-7 rounded-md ">
                         </button>
+                        <button>
+
+                            <li>
+                                <img src="login.png" alt="" class="hover:scale-110 h-[2.4rem] -mt-1 ">
+                            </li>
+                        </button>
+                        
+                    </ul>
+                    <ul class="flex ">
+    
+                        <li class="ml-6">
+                            <a href="">
+    
+                                <img src="acnt.png" alt="" class="h-[1.5rem] rounded">
+                            </a>
+                        </li>
+    
+                        <li class="ml-6">
+                            <a href="">
+    
+                                <img src="cart.png" alt="" class="h-[1.5rem] rounded">
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="inline-block p-4 cursor-pointer mr-4 block lg:hidden">
+                        <div class="line h-0.5 w-6 my-1 bg-white"></div>
+                        <div class="line h-0.5 w-6 my-1 bg-white"></div>
+                        <div class="line h-0.5 w-6 my-1 bg-white"></div>
+    
+                    </div>
+    
                 </div>
             </div>
-
-                <div
-                    class="max-w-sm overflow-hidden rounded-xl bg-white shadow-md duration-200 hover:scale-105 hover:shadow-xl">
-                    <img src="fruit slice logo.png" alt="plant" class="h-auto w-full" />
-                    <div class="p-5">
-                        <p class="text-medium mb-5 text-gray-700">
-                            <button
-                                class="w-full rounded-md bg-indigo-600  py-2 text-indigo-100 hover:bg-indigo-500 hover:shadow-md duration-75">Challenge
-                            </button>
-                    </div>
-                </div>
-                
-                    <div
-                        class="max-w-sm overflow-hidden rounded-xl bg-white shadow-md duration-200 hover:scale-105 hover:shadow-xl">
-                        <img src="carrom.png" alt="plant" class="h-auto w-full" />
-                        <div class="p-5">
-                            <p class="text-medium mb-5 text-gray-700">Well, aren't you going up to the lake tonight,
-                                you've
-                                been planning it for two weeks.</p>
-                            <button
-                                class="w-full rounded-md bg-indigo-600  py-2 text-indigo-100 hover:bg-indigo-500 hover:shadow-md duration-75">See
-                                More</button>
-                        </div>
-                    </div>
-                </div>
-
-                </ul>
-            </div>
-
-
+        </nav>
+        
+    </div>
 
 </body>
 
