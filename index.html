@@ -15,33 +15,38 @@
 
 
 
-<body class="background-animate w-full h-screen bg-gradient-to-r from-orange-900 via-orange-500 to-yellow-600 ">
-    <nav id="navbar" class="h-16 sticky flex justify-center py-3 backdrop-blur-xl rounded-lg top-0">
-        <div class="flex ">
+<body class="background-animate w-full h-screen bg-gradient-to-r from-orange-800 via-orange-500 to-yellow-600 ">
+    <nav id="navbar"
+        class="z-10 h-16 w-[95%] sticky flex justify-center mx-auto py-3 backdrop-blur-lg rounded-lg top-0">
+        <div class="flex justify-between">
             <a class="mr-52" href="index.html">
                 <img src="logo.jpg" alt="" class="h-[3rem] ml-4 rounded-lg">
             </a>
 
             <ul class="hidden lg:flex">
-                <li class="text-black text-xl font-bold ml-10">
+                <li class="text-black text-xl font-bold hover:scale-110 ">
                     <a href="">Home </a>
 
                 </li>
 
-                <li class="text-black text-xl font-bold ml-10">
+                <li class="text-black text-xl font-bold ml-10 hover:scale-110 ">
                     <a href="">Dashboard
                     </a>
                 </li>
-                <li class="text-black text-xl font-bold ml-10">
+                <li class="text-black text-xl font-bold ml-10 hover:scale-110 ">
                     <a href="">Store </a>
                 </li>
 
-                <li class="text-black text-xl font-bold ml-10">
+                <li class="text-black text-xl font-bold ml-10 hover:scale-110 ">
                     <a href="">Support
                     </a>
                 </li>
 
-                <li class="text-black text-xl font-bold ml-10  "> <a href=""> About </a> </li>
+                <li class="text-black text-xl font-bold ml-10 hover:scale-110  ">
+                    <a href="">
+                        About
+                    </a>
+                </li>
             </ul>
 
         </div>
@@ -56,7 +61,7 @@
             <ul class="hidden lg:flex">
 
                 <li class="ml-10">
-                    <input type="text" class="rounded px-4 mr-2 mt-1" placeholder="Search Games">
+                    <input type="text" class="rounded px-4 py-1 mr-2" placeholder="Search Games">
                 </li>
                 <button id="btn" class="hover:scale-110">
 
@@ -71,15 +76,41 @@
         </div>
 
 
-        <div class="inline-block p-4 cursor-pointer mr-4 lg:hidden">
+        <div onclick="hamburgerMenu()" class="inline-block p-4 cursor-pointer mr-4 lg:hidden">
             <div class="line h-0.5 w-6 my-1 bg-white"></div>
             <div class="line h-0.5 w-6 my-1 bg-white"></div>
             <div class="line h-0.5 w-6 my-1 bg-white"></div>
-
         </div>
     </nav>
 
+    <div id="smallMenu" class="bg bg-orange-500 flex-col justify-center hidden mx-auto">
+        <ul class="lg:flex">
+            <li class="text-black border-y-2 border-yellow-500 py-1 text-center text-xl font-bold hover:scale-110 ">
+                <a href="">Home </a>
 
+            </li>
+
+            <li class="text-black border-b-2 border-yellow-500 py-1 text-center text-xl font-bold hover:scale-110 ">
+                <a href="">Dashboard
+                </a>
+            </li>
+            <li class="text-black border-b-2 border-yellow-500 py-1 text-center text-xl font-bold hover:scale-110 ">
+                <a href="">Store </a>
+            </li>
+
+            <li class="text-black border-b-2 border-yellow-500 py-1 text-center text-xl font-bold  hover:scale-110 ">
+                <a href="">Support
+                </a>
+            </li>
+
+            <li class="text-black border-y-2 border-yellow-500 py-1 text-center text-xl font-bold hover:scale-110  ">
+                <a href="">
+                    About
+                </a>
+            </li>
+        </ul>
+
+    </div>
 
     <div class="flex mt-20 overflow-hidden flex-wrap justify-center">
 
@@ -87,8 +118,11 @@
             class="w-[40rem] m-4 overflow-hidden rounded-xl bg-white shadow-md duration-200 hover:scale-105 hover:shadow-xl">
             <img src="chess logo.png" alt="plant" class="h-80 w-92 ml-9 rounded-md mt-6" />
             <div class="p-5">
-                <button
-                    class="w-[35rem] rounded-md bg-indigo-600  py-2 ml-2 text-indigo-100 hover:bg-indigo-500 hover:shadow-md duration-75">Challenge</button>
+                <a href="https://www.chess.com/" target="_blank">
+                    <button
+                        class="w-[35rem] rounded-md bg-indigo-600  py-2 ml-2 text-indigo-100 hover:bg-indigo-500 hover:shadow-md duration-75">Challenge
+                    </button>
+                </a>
             </div>
         </div>
 
@@ -96,10 +130,11 @@
             class="w-[40rem] m-4 overflow-hidden rounded-xl bg-white shadow-md duration-200 hover:scale-105 hover:shadow-xl">
             <img src="ludo logo.png" alt="plant" class="h-80 w-[35rem] ml-9 rounded-md mt-6" />
             <div class="p-5">
-                <p class="text-medium mb-5 text-gray-700">
+                <a href="https://play.google.com/store/apps/details?id=com.ludo.king&hl=en&gl=US&pli=1" target="_blank">
                     <button
                         class="w-[35rem] rounded-md bg-indigo-600  ml-2 py-2 text-indigo-100 hover:bg-indigo-500 hover:shadow-md duration-75">Challenge
                     </button>
+                </a>
             </div>
         </div>
 
@@ -107,10 +142,11 @@
             class="w-[40rem] m-4 overflow-hidden rounded-xl bg-white shadow-md duration-200 hover:scale-105 hover:shadow-xl">
             <img src="fruit slice logo.png" alt="plant" class="h-80 w-[35rem] ml-9 rounded-md mt-6" />
             <div class="p-5">
-                <p class="text-medium mb-5 text-gray-700">
+                <a href="https://www.silvergames.com/en/fruit-slice" target="_blank">
                     <button
                         class="w-[35rem] rounded-md bg-orange-500  ml-2 py-2 text-indigo-100 hover:bg-black hover:shadow-md duration-75">Challenge
                     </button>
+                </a>
             </div>
         </div>
 
@@ -118,25 +154,37 @@
             class="w-[40rem] m-4 overflow-hidden rounded-xl bg-white shadow-md duration-200 hover:scale-105 hover:shadow-xl">
             <img src="carrom.png" alt="plant" class="h-80 w-[35rem] ml-9 rounded-md mt-6" />
             <div class="p-5">
-
-                <button
-                    class="w-full rounded-md bg-indigo-600   ml-2 py-2 text-indigo-100 hover:bg-indigo-500 hover:shadow-md duration-75">See
-                    More</button>
+                <a href="https://gamesnacks.com/games/carromclash" target="_blank">
+                    <button
+                        class="w-full rounded-md bg-indigo-600   ml-2 py-2 text-indigo-100 hover:bg-indigo-500 hover:shadow-md duration-75">See
+                        More
+                    </button>
+                </a>
             </div>
         </div>
     </div>
 
     <script>
-        const navbar = document.getElementById("navbar");
+        // const navbar = document.getElementById("navbar");
 
-        window.onscroll = function () {
-            if (document.body.scrollTop >= 200 || document.documentElement.scrollTop >= 200) {
-                navbar.style.backgroundColor = "hsl(24, 100%, 40%)";
+        // window.onscroll = function () {
+        //     if (document.body.scrollTop >= 200 || document.documentElement.scrollTop >= 200) {
+        //         navbar.style.backgroundColor = "hsl(24, 100%, 40%)";
+        //     }
+        //     else {
+        //         navbar.style.backgroundColor = "transparent";
+        //     }
+        // };
+
+        const hamburgerMenu = () => {
+            console.log("lemon");
+            var x = document.getElementById("smallMenu");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
             }
-            else {
-                navbar.style.backgroundColor = "transparent";
-            }
-        };
+        }
     </script>
 
 </body>
